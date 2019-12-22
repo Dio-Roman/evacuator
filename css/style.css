@@ -13,10 +13,25 @@ body {
     linear-gradient(rgb(247, 255, 90), #2C3535 )
 
 }
+h1 {
+  font-size: xx-large;
+  color: #474650;
+  font-weight: 400;
+}
 nav {
+  line-height: 95px;
   background-color: #e8ef43 ;
 }
-
+.desk-tabs {
+  height: 100%;
+}
+.desk-tabs li {
+  height: 100%;
+}
+.desk-tabs__a {
+  height: 100%;
+  font-size: large;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -31,7 +46,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 500px;
+  min-height: 630px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -50,6 +65,13 @@ p {
   }
 }
 
+
+@media only screen and (min-width: 960px) {
+ .flow-text {
+    font-size: 1.5rem;
+} 
+}
+
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
@@ -57,7 +79,8 @@ p {
 }
 
 .icon-block {
-  padding: 0 15px;
+  height: 65vh;
+  padding: 1px 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
@@ -69,9 +92,14 @@ footer.page-footer {
 }
 
 .logo {
-  width: 6em;
+  /* width: 6em; */
+  width: 6.8em;
+  margin-right: 2em;
 }
 nav {
   height: 94px;
   line-height: 86px;
+}
+.card-panel {
+  background-color: #e08539e3;
 }
