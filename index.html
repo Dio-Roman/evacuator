@@ -28,7 +28,7 @@
       <div class="nav-wrapper container">
         <!-- <img class="logo" src="./img/superlogo.png" alt=""> -->
         <img class="logo" src="./img/Chip_n_dale.gif" alt="" />
-        <a id="logo-container" href="#" class="brand-logo">Эвакуатор-СПБ</a>
+        <!-- <a id="logo-container" href="#" class="brand-logo">Эвакуатор-СПБ</a> -->
         <!-- <a href="tel:+7-921-000-0000" id="download-button" class=" btn-large waves-effect waves-light teal lighten-1">Вызвать эвакуатор</a> -->
 
         <ul class="desk-tabs right hide-on-med-and-down">
@@ -39,10 +39,10 @@
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="#price">Цены</a></li>
-          <li><a href="#advantages">Наши преимущества</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#price">ЦЕНЫ</a></li>
+          <li><a href="#advantages">НАШИ ПРЕИМУЩЕСТВА</a></li>
+          <li><a href="#about">О НАС</a></li>
+          <li><a href="#contacts">КОНТАКТЫ</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
@@ -52,11 +52,12 @@
 
     <div id="index-banner" class="parallax-container">
       <div class="section no-pad-bot">
-        <div class="container">
+        <main class="container ">
           <br /><br />
           <!-- <h1 class="header center teal-text text-lighten-2">Эвакуатор-СПБ</h1> -->
           <div class="row center">
-            <h1 class="header col s12 light">Чип и дейл придут на помощь!</h1>
+            <h1 id="logo-container" class="header col s12 light">Эвакуатор-СПБ</h1>
+
           </div>
           <div class="row center">
             <a
@@ -66,9 +67,13 @@
               >Вызвать эвакуатор</a
             >
           </div>
+          <div class="row center">
+            <h4 class="header col s12 light">Чип и дейл придут на помощь!</h4>
+          </div>
+
 
           <br /><br />
-        </div>
+        </main>
       </div>
       <div class="parallax">
         <img src="background3.jpg" alt="Unsplashed background img 1" />
@@ -81,13 +86,16 @@
           <div id="price" class="col s12 center">
             <h3><i class="mdi-content-send brown-text"></i></h3>
             <h4>Цены</h4>
-            <tbody>
+            
               <table>
-                <tr>
-                  <td>Тип т/с</td>
-                  <td>Стоимость подачи (руб.)</td>
-                  <td>Доп. за км (руб.)</td>
+                <thead>
+                  <tr>
+                  <th>Тип т/с</th>
+                  <th>Стоимость подачи (руб.)</th>
+                  <th>Доп. за км (руб.)</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                   <td>Мототехника</td>
                   <td>2000</td>
@@ -146,7 +154,7 @@
             <!-- <h5 class="header col s12 light">Оплата картами и налом ... A modern responsive front-end framework based on Material Design</h5> -->
             <div id="advantages" class="section">
               <!--   Icon Section   -->
-              <div class="row">
+              <div class="row achive">
                 <div class="col s12 m4">
                   <div class="icon-block card-panel z-depth-3">
                     <h2 class="center brown-text">
@@ -259,7 +267,7 @@
 
     <footer class="page-footer ">
       <div class="container">
-        <div class="row">
+        <div class="row footer-block">
           <div id="about" class="col l6 s12">
             <h5 class="white-text">О нас</h5>
             <p class="grey-text text-lighten-4">
@@ -271,10 +279,13 @@
 
           <div id="contacts" class="col l3 s12">
             <h5 class="white-text">Контакты</h5>
-            <ul>
-              <li><a class="white-text" href="#!">zhelnov.dima@mail.ru </a></li>
-              <li><a class="white-text" href="#!">+7 (921) 000-00-00</a></li>
-            </ul>
+            <address>
+              <ul>
+                <li><a class="white-text" href="#!">zhelnov.dima@mail.ru </a></li>
+                <li><a class="white-text" href="#!">+7 (921) 000-00-00</a></li>
+              </ul>
+            </address>
+            
           </div>
         </div>
       </div>

@@ -9,9 +9,7 @@
  */
 
 body {
-  background: 
-    linear-gradient(rgb(247, 255, 90), #2C3535 )
-
+  background: linear-gradient(rgb(247, 255, 90), #f77d27);
 }
 h1 {
   font-size: xx-large;
@@ -20,7 +18,7 @@ h1 {
 }
 nav {
   line-height: 95px;
-  background-color: #e8ef43 ;
+  background-color: #e8ef43;
 }
 .desk-tabs {
   height: 100%;
@@ -31,6 +29,7 @@ nav {
 .desk-tabs__a {
   height: 100%;
   font-size: large;
+  color: #834b1c;
 }
 nav ul a,
 nav .brand-logo {
@@ -49,13 +48,18 @@ p {
   min-height: 630px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
-@media only screen and (max-width : 992px) {
+.flow-text {
+  text-align: justify;
+  padding: 0px 10px;
+}
+
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -65,21 +69,48 @@ p {
   }
 }
 
-
 @media only screen and (min-width: 960px) {
- .flow-text {
+  .flow-text {
     font-size: 1.5rem;
-} 
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: initial;
+    /* top: 40%; */
+  }
+  .achive {
+    display: flex ;
+    flex-direction: column;
+  }
+  .brown-text {
+   font-size: 2.5em;
+  }
+  #about {
+    margin-left: initial;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .row .col.m4 {
+    width: 100%;
+  }
+}
+
+.parallax-container {
+  min-height: none;
+}
+
 .icon-block {
-  height: 65vh;
+  height: 100%;
   padding: 1px 15px;
 }
 .icon-block .material-icons {
@@ -88,7 +119,7 @@ p {
 
 footer.page-footer {
   margin: 0;
-  background-color: #2C3535;
+  background-color: #2c3535;
 }
 
 .logo {
@@ -96,10 +127,87 @@ footer.page-footer {
   width: 6.8em;
   margin-right: 2em;
 }
+#logo-container {
+  color: #834b1c;
+  font-family: fantasy;
+}
 nav {
   height: 94px;
   line-height: 86px;
 }
 .card-panel {
+  background-color: #e08539e3;
+}
+thead,
+tbody {
+  font-size: 1.4em;
+}
+
+th:nth-child(2),
+th:nth-child(3),
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 300px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+.achive {
+  display: flex;
+}
+.brown-text {
+  margin: 15px;
+}
+
+#about {
+  width: 50%;
+  padding-left: 35px;
+  margin-left: initial;
+}
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacts {
+  width: 25%;
+  margin-left: 0;
+  padding-left: 35px;
+
+}
+@media screen and (max-width: 800px) {
+  .footer-block {
+    display: grid;
+  }
+  #about,
+  #contacts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.sidenav-trigger {
+  position: absolute;
+  top: 18%;
+}
+
+#nav-mobile {
   background-color: #e08539e3;
 }
